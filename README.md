@@ -13,3 +13,31 @@ Como objetivos específicos temos:
 - Integrar o site a um aplicativo de localização que garanta a eficiência e rapidez no percurso.
 - Permitir que o usuário avalie outros usuários visando seu conforto e segurança durante a viagem
 - Prover ao usuário formas de realizar e receber pagamentos de forma veloz e segura.
+
+A pesquisa de "Regiões de Influências das Cidades" do IBGE, realizada em 2020, expõe o
+alto deslocamento de indivíduos como consequência da demanda por formação em
+instituições renomadas, e consequente locomoção, até mesmo, entre diferentes municípios.
+Para os alunos que não possuem automóveis próprios e condições financeiras de acessar
+veículos particulares (como, por exemplo, estudantes que ingressam em instituições
+particulares através do ProUni), a escassez dos transportes públicos se torna uma
+dificuldade.
+Em uma reportagem do site "Transite", publicada em 2023, que entrevistou graduandos da
+UFMG, Kauet Machado, estudante de jornalismo com moradia à 22 km de distância da
+faculdade, relatou as vantagens que encontra em utilizar caronas, ao invés de locomoções
+públicas, sendo fatores como a diminuição da jornada, conforto e praticidade.
+Com isso, estudantes que trabalham o dia inteiro e perdem o pouco de tempo que possuem
+nesses transportes, assim como a falta de segurança (inclusive para os funcionários do
+campus) que o período noturno oferece na volta para casa, evidenciam a solução como
+objeto de auxílio compatível com indivíduos que enfrentam essas realidades.
+
+O foco deste trabalho está em estudantes universitários, professores, vigias e outros
+funcionários do campus, todos exclusivamente da PUC Minas São Gabriel. O sistema busca
+fornecer auxílio para essas pessoas que não possuem veículos próprios e enfrentam
+dificuldades no transporte, como a dependência diária de vários ônibus e metrôs, ou apenas
+aqueles que buscam uma companhia para um trajeto mais seguro e divertido.
+Sem faixa etária definida de público, pois tanto a idade dos alunos quanto dos funcionários
+podem variar bastante, assim como a escolaridade. Enquanto aluno, é necessário estar
+matriculado no ensino superior, e, para contratados da faculdade, não há formação
+específica.
+As viagens variam de acordo com o destino e ponto de partida identificado pelo solicitante,
+dessa forma, a especificação da localização de usuários não é necessária.
