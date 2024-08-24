@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="../css/cadastro.css">
+  <link rel="stylesheet" type="text/css" href="../css/cadastropassageiro.css">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/14b9e6728b.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+  <form id="form">
+    <ul id="progress">
+      <li class="active"> </li>
+      <li> </li>
+      <li> </li>
+    </ul>
+
+
+    <fieldset id="fieldset_1">
+
+      <div id="formu">
+        <!--<div id="msgErrorCampo"> </div>
+    <div id="msgSuccessCampo"> </div> -->
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <label id="labelMatricula" for="matricula"> N° da matrícula * </label>
+              <input class="input" type="text" id="matricula" class="w-100" type="text" placeholder="Insira 6 dígitos"
+                required>
+
+            </div>
+
+
+
+            <div class="col-12">
+              <label id="labelEndereco" for="endereço"> Endereço </label>
+              <input class="input" id="endereco" class="w-100" type="text" placeholder="Rua Escília Siqueira, Taquaril"
+                required>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-7">
+              <label id="labelCidade" for="cidade"> Cidade </label>
+              <input class="input" id="cidade" type="text" placeholder="Belo-Horizonte" required>
+            </div>
+
+            <div class="col-5">
+              <label id="labelUf" for="uf"> Estado </label>
+              <input class="input" id="uf" type="text" placeholder="Minas Gerais" required>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-4">
+              <label id="labelCep" for="cep"> Cep </label>
+              <input class="input" id="cep" type="text" placeholder="00000-000" required>
+            </div>
+
+
+            <div class="col-md-4">
+              <label id="labelNumero" for="numero"> Número </label>
+              <input class="input" id="numero" type="text" placeholder="54" required>
+            </div>
+
+            <div class="col-md-4">
+              <label id="labelComplemento" for="complemento"> Região </label>
+              <input class="input" id="complemento" type="text" placeholder="Leste" required>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-12">
+              <label id="labelCurso" for="curso"> Curso * </label>
+              <input class="input" id="curso" type="text" placeholder="Análise e Desenvolvimento de Sistemas" required>
+            </div>
+          </div>
+
+
+
+          <!-- </form> -->
+        </div>
+
+
+        <div class="form-check">
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <p id="escolhadesktop"> Escolha uma opçao * </p>
+              </div>
+              <!--passageiro-->
+              <div class="col-3">
+                <input type="radio" id="motoristadesktop" name="radio" value="s">
+                <label id="motorista" for="motoristadesktop"> Motorista </label>
+              </div>
+              <!--motorista-->
+              <div class="col-3">
+                <input type="radio" id="passageirodesktop" name="radio" value="s">
+                <label id="passageiro" for="passageirodesktop"> Passageiro </label>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="group-2">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <button id="salvar"> Salvar </button>
+              </div>
+              <div class="col-6">
+                <input type="submit" name="next" class="next acao" value="Proximo" id="Proximo"> </input>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="divTable">
+        <table id="tabela">
+          <thead>
+            <tr>
+              <th id="crud">N° da matrícula</th>
+              <th id="crud">Endereço</th>
+              <th id="crud">Cidade</th>
+              <th id="crud">Estado</th>
+              <th id="crud">CEP</th>
+              <th id="crud">Número</th>
+              <th id="crud">Região</th>
+              <th id="crud">Curso</th>
+              <th id="excluir">Excluir</th>
+            </tr>
+          </thead>
+          <tbody id="porfavor"></tbody>
+        </table>
+      </div>
+
+    </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--SEGUNDO GRUPO -->
+    <fieldset>
+
+      <div class="container">
+        <div class="motorista">
+          <h1 id="motorista_Title" class="position-absolute top-0 start-5"> Motorista </h1>
+          <div id="setor1"> <label>
+              <p id="tela_motorista"> <strong id="tela_motorista"> 1 - Quantidade máxima de passageiros no carro:
+                </strong></p>
+            </label>
+            <label for="p1"><input type="checkbox" id="p1" value="1 pessoa">1 pessoa</label>
+            <label for="p2"><input type="checkbox" id="p2" value="2 pessoas">2 pessoas</label>
+            <label for="p3"><input type="checkbox" id="p3" value="3 pessoas">3 pessoas</label>
+            <label for="p4"><input type="checkbox" id="p4" value="4 pessoas">4 pessoas</label>
+          </div>
+          <div id="setor2"> <label>
+              <p id="tela_motorista"> <strong> 2 - Alimentação/bebidas permitidas no veículo? </strong></p>
+            </label>
+            <label for="sempermissao"><input type="checkbox" id="sempermissao"> Sem permissão </label>
+            <label for="naomeimporto"><input type="checkbox" id="naomeimporto">Não me importo</label>
+            <label for="semalimentacao"><input type="checkbox" id="semalimentacao">Sem alimentação</label>
+            <label for="sembebida"><input type="checkbox" id="sembebida">Sem bebida</label>
+          </div>
+          <div id="setor3">
+            <div class="acessibilidade">
+              <label>
+                <p id="tela_motorista"> <strong> 3 - Carro com acessibilidade? (espaço para levar cadeira de rodas,
+                    viagens com cães guias...)</strong></p>
+              </label>
+              <div>
+                <label for="sim"><input type="checkbox" id="sim"> Sim</label>
+                <label for="nao"><input type="checkbox" id="nao"> Não</label>
+              </div>
+              <div id="setor4"> <label>
+                  <p id="tela_motorista"><strong> 4 - Horários disponiveis para carona: </strong></p>
+                </label>
+                <select id="seletor">
+                  <option value="Selecione uma opçao">Selecione uma opção</option>
+                  <option value="manha">Manhã</option>
+                  <option value="tarde">Tarde</option>
+                  <option value="noite">Noite</option>
+                </select>
+                <label for="de"> De: <input type="time" id="hora1"> </label>
+                <label for="ate"> Até: <input type="time" id="hora2"> </label>
+                <input type="button" id="botaoadicionar" value="+ Adicionar mais horários +">
+                <div id="horariosadicionais"></div>
+              </div>
+              <div id="setor5"> <label>
+                  <p id="tela_motorista"><strong> 5 - Dias da semana disponíveis para carona: </strong></p>
+                </label>
+                <label for="segunda"><input type="checkbox" id="segunda">Segunda-feira</label>
+                <label for="terca"><input type="checkbox" id="terca">Terça-feira</label>
+                <label for="quarta"><input type="checkbox" id="quarta">Quarta-feira</label>
+                <label for="quinta"><input type="checkbox" id="quinta">Quinta-feira</label>
+                <label for="sexta"><input type="checkbox" id="sexta">Sexta-feira</label>
+              </div>
+              <div id="setor6"> <label>
+                  <p id="info_adicionais"><strong> 6 - Informações adicionais: </strong> </p>
+                </label>
+                <textarea id="texto" rows="5" cols="50"> </textarea>
+
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div id="botao"> <input type="button" id="botao" value="Salvar" </div>
+                </div>
+                <div class="group-2">
+
+                  <div class="row">
+                    <div class="col-6">
+                      <input type="submit" name="prev" class="prev acao" value="Anterior" id="Anterior"> </input>
+                    </div>
+                    <div class="col-6">
+                      <input type="submit" name="next" class="next acao" value="Proximo" id="Proximo"> </input>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+    </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--SEGUNDO GRUPO PASSAGEIRO -->
+    <fieldset>
+
+      <div id="sectionPassageiro" class="section">
+        <div class="passageiro">
+          <div class="container">
+            <h1 class="position-absolute top-0 start-5" id="passageiro_Title"> Passageiro </h1>
+            <div id="setor1"> <label>
+                <p> <strong> 1 - Número máximo de pessoas no carro: </strong></p>
+              </label>
+              <label for="p1"><input type="checkbox" id="pessoa1">1 pessoa</label>
+              <label for="p2"><input type="checkbox" id="pessoa2">2 pessoas</label>
+              <label for="p3"><input type="checkbox" id="pessoa3">3 pessoas</label>
+              <label for="p4"><input type="checkbox" id="pessoa4">4 pessoas</label>
+            </div>
+            <div id="setor2"> <label>
+                <p> <strong> 2 - Restrições quanto ao sexo do motorista? </strong></p>
+              </label>
+              <label for="sim"><input type="checkbox" id="simp"> Sim</label>
+              <label for="nao"><input type="checkbox" id="naop"> Não</label>
+              <p> Se sim: </p>
+              <select id="seletorp">
+                <option value="Selecione uma opçao">Selecione uma opção</option>
+                <option value="homem">Homem</option>
+                <option value="mulher">Mulher</option>
+              </select>
+            </div>
+            <div id="setor3"> <label>
+                <p> <strong> 3 - Necessita de accesibilidade? </strong></p>
+              </label>
+              <label for="acesssim"><input type="checkbox" id="acesssim"> Sim</label>
+              <label for="acessnao"><input type="checkbox" id="acessnao"> Não</label>
+            </div>
+            <div id="setor4"> <label>
+                <p><strong> 4 - Horários disponiveis para carona: </strong></p>
+              </label>
+              <select id="seletorhorario">
+                <option value="Selecione uma opçao">Selecione uma opção</option>
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+              </select>
+              <label for="h1"> De: <input type="time" id="hora1p"> </label>
+              <label for="h2"> Até: <input type="time" id="hora2p"> </label>
+              <input type="button" id="botaoadicionarpassageiro" value="+ Adicionar mais horários +">
+              <div id="horariosadicionaisp"></div>
+            </div>
+            <div id="setor5"> <label>
+                <p><strong> 5 - Dias da semana disponíveis para carona: </strong></p>
+              </label>
+              <label for="segunda"><input type="checkbox" id="segundap">Segunda-feira</label>
+              <label for="terca"><input type="checkbox" id="tercap">Terça-feira</label>
+              <label for="quarta"><input type="checkbox" id="quartap">Quarta-feira</label>
+              <label for="quinta"><input type="checkbox" id="quintap">Quinta-feira</label>
+              <label for="sexta"><input type="checkbox" id="sextap">Sexta-feira</label>
+            </div>
+            <div id="setor6"> <label>
+                <p><strong> 6 - Informações adicionais: </strong> </p>
+
+              </label>
+              <textarea id="textop" rows="5" cols="50"> </textarea>
+
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div id="botao"> <input type="button" id="botaop" value="Salvar" </div>
+              </div>
+              <div class="group-2">
+
+                <div class="row">
+                  <div class="col-6">
+                    <input type="submit" name="prev" class="prev acao" value="Anterior" id="Anterior"> </input>
+                  </div>
+                  <div class="col-6">
+                    <input type="submit" name="next" class="next acao" value="Proximo" id="Proximo"> </input>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </fieldset>
+    <!--FIM DO SEGUNDO GRUPO-->
+
+
+
+
+    <!--TERCEIRO GRUPO-->
+    <fieldset>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="fim">
+              <h3 id="title"> Sua conta foi registrada com sucesso! </h3>
+              <img id="registro" src="/imagens/registro.png" width="300px" height="300px">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <input type="submit" name="prev" class="prev acao" value="Anterior" id="Anterior"> </input>
+
+
+      <button type="button" id="PaginaInicial" onclick="redirecionarParaCadastro()">Página inicial</button>
+
+
+    </fieldset>
+    <!--FIM DO TERCEIRO GRUPO-->
+    </div>
+  </form>
+
+  </div>
+
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+  
+  <script src="../script/motorista.js"></script>
+   <script src="../script/passageiro.js"></script>
+   <script src="../script/cadastro.js"></script>
+
+
+
+
+
+</body>
+
+</html>
